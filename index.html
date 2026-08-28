@@ -1,24 +1,83 @@
 <!DOCTYPE html>
 <html lang="fr">
 
+<!DOCTYPE html>
+<html lang="fr">
+
 <head>
+	<meta charset="UTF-8">
 
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 	<title>Nina Carducci | Photographe professionnelle</title>
 
 	<meta name="description"
 		content="Découvrez le portfolio de Nina Carducci, photographe professionnelle spécialisée dans les portraits, mariages, concerts et photographies d'entreprise.">
+
+	<!-- Open Graph -->
+	<meta property="og:title" content="Nina Carducci | Photographe professionnelle">
+	<meta property="og:description"
+		content="Découvrez le portfolio de Nina Carducci, photographe professionnelle spécialisée dans les portraits, mariages, concerts et photographies d'entreprise.">
+	<meta property="og:type" content="website">
+	<meta property="og:locale" content="fr_FR">
+	<meta property="og:site_name" content="Nina Carducci">
+
+	<!-- Twitter / X Card -->
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:title" content="Nina Carducci | Photographe professionnelle">
+	<meta name="twitter:description"
+		content="Découvrez le portfolio de Nina Carducci, photographe professionnelle spécialisée dans les portraits, mariages, concerts et photographies d'entreprise.">
+
+	<!-- Référencement local Schema.org -->
+	<script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "Nina Carducci",
+        "description": "Photographe professionnelle spécialisée dans les portraits, mariages, concerts et photographies d'entreprise.",
+        "telephone": "+33556677889",
+		"priceRange": "50€ - 400€",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "68 avenue Alsace-Lorraine",
+            "postalCode": "33200",
+            "addressLocality": "Bordeaux",
+            "addressCountry": "FR"
+        },
+        "openingHoursSpecification": {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": [
+                "Monday",
+                "Tuesday",
+                "Wednesday",
+                "Thursday",
+                "Friday"
+            ],
+            "opens": "10:00",
+            "closes": "19:00"
+        },
+        "sameAs": [
+            "https://www.instagram.com/ninacarducci.photo/?hl=fr"
+        ]
+    }
+    </script>
+
 	<link rel="stylesheet" href="./assets/bootstrap/bootstrap.css">
 	<link rel="stylesheet" href="./assets/style.css">
+
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
 	<link
 		href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap"
 		rel="stylesheet">
-	<meta charset="UTF-8">
+
 	<script src="./assets/bootstrap/bootstrap.bundle.js"></script>
+
 	<script src="https://code.jquery.com/jquery-3.4.1.min.js"
-		integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+		integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous">
+		</script>
+
 	<script src="./assets/maugallery.js"></script>
 	<script src="./assets/scripts.js"></script>
 </head>
@@ -65,14 +124,12 @@
 				</div>
 			</div>
 			<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
-				data-bs-slide="prev">
+				data-bs-slide="prev" aria-label="Image précédente">
 				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-				<span class="visually-hidden">Previous</span>
 			</button>
 			<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
-				data-bs-slide="next">
+				data-bs-slide="next" aria-label="Image suivante">
 				<span class="carousel-control-next-icon" aria-hidden="true"></span>
-				<span class="visually-hidden">Next</span>
 			</button>
 		</div>
 	</div>
@@ -193,13 +250,14 @@
 				<h3>Une question ? Une demande de devis ?</h3>
 				<p> N'hésitez pas à m'écrire ! Je vous répondrais en moins de 24 heures</p>
 				<form action="" method="post">
-					<label>Nom</label>
+					<label for="nom">Nom</label>
 					<input type="text" name="nom" id="nom">
-					<label>Email</label>
+
+					<label for="email">Email</label>
 					<input type="email" name="email" id="email">
-					<label>Message</label>
+
+					<label for="message">Message</label>
 					<textarea name="message" id="message" cols="30" rows="10"></textarea>
-					<input type="submit" value="Envoyer" />
 				</form>
 			</div>
 			<div class="picture right">
