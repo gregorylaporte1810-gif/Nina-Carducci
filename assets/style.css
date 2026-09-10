@@ -455,6 +455,6 @@ input[type="submit"] {
 
 
 /* Les images du carrousel gardent de bonnes proportions */
-.carousel-inner img {
+ .carousel-item active img {
     object-fit: cover;
 }
